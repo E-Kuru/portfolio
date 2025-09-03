@@ -36,3 +36,12 @@ nebulaArea.addEventListener('mousemove', function (e) {
     cursorNebula.remove();
   }, 500); // Supprimer après 500ms
 });
+
+const titles = document.querySelectorAll('.experience-title');
+
+    titles.forEach(title => {
+      title.addEventListener('click', () => {
+        const content = title.nextElementSibling;
+        content.classList.toggle('open');
+      });
+    });

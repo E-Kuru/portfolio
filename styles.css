@@ -566,16 +566,80 @@ header {
   line-height: 1.6;
 }
 
-/* Portfolio & Skills Section */
+/* Expérience section */
+
+ #experiences{
+  padding: 1.5rem 0;
+  border-top: 1px solid #333356;
+  text-align: left;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.experienceList{
+  margin-top: 1.5rem;
+  border: red solid 1px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.experience-container {
+      width: 80%;
+      max-width: 1000px;
+      padding: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .experience-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .experience-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+      text-align: left;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .experience-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .experience-content.open {
+      max-height: 300px; /* Ajustable selon contenu */
+    }
+
+    
+/* Project & Skills Section */
 .portfolio-skills {
   padding: 8rem 0;
   background: rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
 }
 
 .portfolio h2,
@@ -687,6 +751,132 @@ header {
   transform: translateY(-50%);
 }
 
+/* Carousel */
+
+.carousel {
+    /* ... */
+    > * {
+      flex: 0 0 100%;
+    }
+  }
+
+  /* Group the cards for better structure. */
+  .group {
+    display: flex;
+    gap: 20px;
+    /* Add padding to the right to create a gap between the last and first card. */
+    padding-right: 20px;
+  }
+  
+.carousel-container {
+  width: 100%;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-title {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.carousel-track {
+    display: flex;
+    animation: carousel-scroll 20s linear infinite;
+    -webkit-animation: carousel-scroll 20s linear infinite;
+}
+
+.carousel-item {
+    min-width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+}
+
+.carousel-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 1);
+
+  .carousel-name{
+    color: #141629;
+  }
+}
+
+img{
+  width: 50px;
+}
+
+.carousel-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item:hover .carousel-logo {
+    transform: rotate(360deg);
+}
+
+.carousel-name {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+@keyframes carousel-scroll {
+   0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .carousel-title {
+        font-size: 2rem;
+    }
+    
+    .carousel-item {
+        min-width: 100px;
+        height: 100px;
+    }
+    
+    .carousel-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 /* Contact Section */
 .contact {
   height: 100vh;
@@ -739,6 +929,7 @@ header {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
