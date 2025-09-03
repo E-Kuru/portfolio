@@ -795,8 +795,8 @@ a{
 
 .carousel-track {
     display: flex;
-    animation: carousel-scroll 20s linear infinite;
-    -webkit-animation: carousel-scroll 20s linear infinite;
+    animation: carousel-scroll 30s linear infinite;
+    -webkit-animation: carousel-scroll 30s linear infinite;
 }
 
 .carousel-item {
@@ -879,8 +879,8 @@ img{
 
 /* Contact Section */
 .contact {
-  height: 100vh;
-  padding: 8rem 0 4rem 0;
+  height: 50vh;
+  padding: 2rem 0 4rem 0;
 }
 
 .contact h2 {
@@ -982,4 +982,9 @@ img{
   .center-name {
     font-size: 2rem;
   }
+}
+
+.info_link {
+  text-decoration: underline;
+  color: #8b5cf6;
 }
