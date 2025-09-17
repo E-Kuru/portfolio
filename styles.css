@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Arial", sans-serif;
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
@@ -569,6 +573,7 @@ header {
 /* Expérience section */
 
  #experiences{
+  height: 60vh;
   padding: 1.5rem 0;
   border-top: 1px solid #333356;
   text-align: left;
@@ -626,13 +631,14 @@ a{
     }
 
     .experience-content {
+      font-size: 1.4rem;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.4s ease;
     }
 
     .experience-content.open {
-      max-height: 300px; /* Ajustable selon contenu */
+      max-height: 10rem; /* Ajustable selon contenu */
     }
 
     
