@@ -56,21 +56,25 @@ header {
 }
 
 .galaxy-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 1;
-    cursor: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  cursor: none;
 }
 
 .cursor {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 0.7), rgba(0, 0, 255, 0.5));
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.7),
+    rgba(0, 0, 255, 0.5)
+  );
   border-radius: 50%;
   pointer-events: none;
   opacity: 0.5;
@@ -90,7 +94,11 @@ header {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: radial-gradient(circle, rgba(138, 43, 226, 0.8), rgba(0, 0, 255, 0.6));
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.8),
+    rgba(0, 0, 255, 0.6)
+  );
   border-radius: 50%;
   pointer-events: none;
   opacity: 0.6;
@@ -116,311 +124,320 @@ header {
 
 /* Étoiles scintillantes */
 .star {
-    position: absolute;
-    background: white;
-    border-radius: 50%;
-    animation: twinkle 3s infinite;
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
 }
 
 .star-1 {
-    width: 2px;
-    height: 2px;
-    top: 20%;
-    left: 15%;
-    animation-delay: 0s;
+  width: 2px;
+  height: 2px;
+  top: 20%;
+  left: 15%;
+  animation-delay: 0s;
 }
 
 .star-2 {
-    width: 3px;
-    height: 3px;
-    top: 35%;
-    left: 80%;
-    animation-delay: 0.5s;
+  width: 3px;
+  height: 3px;
+  top: 35%;
+  left: 80%;
+  animation-delay: 0.5s;
 }
 
 .star-3 {
-    width: 1px;
-    height: 1px;
-    top: 60%;
-    left: 25%;
-    animation-delay: 1s;
+  width: 1px;
+  height: 1px;
+  top: 60%;
+  left: 25%;
+  animation-delay: 1s;
 }
 
 .star-4 {
-    width: 2px;
-    height: 2px;
-    top: 80%;
-    left: 70%;
-    animation-delay: 1.5s;
+  width: 2px;
+  height: 2px;
+  top: 80%;
+  left: 70%;
+  animation-delay: 1.5s;
 }
 
 .star-5 {
-    width: 1px;
-    height: 1px;
-    top: 15%;
-    left: 60%;
-    animation-delay: 2s;
+  width: 1px;
+  height: 1px;
+  top: 15%;
+  left: 60%;
+  animation-delay: 2s;
 }
 
 .star-6 {
-    width: 2px;
-    height: 2px;
-    top: 45%;
-    left: 10%;
-    animation-delay: 2.5s;
+  width: 2px;
+  height: 2px;
+  top: 45%;
+  left: 10%;
+  animation-delay: 2.5s;
 }
 
 .star-7 {
-    width: 3px;
-    height: 3px;
-    top: 70%;
-    left: 90%;
-    animation-delay: 0.8s;
+  width: 3px;
+  height: 3px;
+  top: 70%;
+  left: 90%;
+  animation-delay: 0.8s;
 }
 
 .star-8 {
-    width: 1px;
-    height: 1px;
-    top: 25%;
-    left: 40%;
-    animation-delay: 1.8s;
+  width: 1px;
+  height: 1px;
+  top: 25%;
+  left: 40%;
+  animation-delay: 1.8s;
 }
 
 /* Particules flottantes */
 .particle {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    animation: float 8s infinite linear;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: float 8s infinite linear;
 }
 
 .particle-1 {
-    width: 4px;
-    height: 4px;
-    top: -10px;
-    left: 10%;
-    animation-delay: 0s;
+  width: 4px;
+  height: 4px;
+  top: -10px;
+  left: 10%;
+  animation-delay: 0s;
 }
 
 .particle-2 {
-    width: 6px;
-    height: 6px;
-    top: -10px;
-    left: 30%;
-    animation-delay: 1s;
+  width: 6px;
+  height: 6px;
+  top: -10px;
+  left: 30%;
+  animation-delay: 1s;
 }
 
 .particle-3 {
-    width: 3px;
-    height: 3px;
-    top: -10px;
-    left: 50%;
-    animation-delay: 2s;
+  width: 3px;
+  height: 3px;
+  top: -10px;
+  left: 50%;
+  animation-delay: 2s;
 }
 
 .particle-4 {
-    width: 5px;
-    height: 5px;
-    top: -10px;
-    left: 70%;
-    animation-delay: 3s;
+  width: 5px;
+  height: 5px;
+  top: -10px;
+  left: 70%;
+  animation-delay: 3s;
 }
 
 .particle-5 {
-    width: 2px;
-    height: 2px;
-    top: -10px;
-    left: 85%;
-    animation-delay: 4s;
+  width: 2px;
+  height: 2px;
+  top: -10px;
+  left: 85%;
+  animation-delay: 4s;
 }
 
 .particle-6 {
-    width: 4px;
-    height: 4px;
-    top: -10px;
-    left: 20%;
-    animation-delay: 5s;
+  width: 4px;
+  height: 4px;
+  top: -10px;
+  left: 20%;
+  animation-delay: 5s;
 }
 
 .particle-7 {
-    width: 3px;
-    height: 3px;
-    top: -10px;
-    left: 60%;
-    animation-delay: 6s;
+  width: 3px;
+  height: 3px;
+  top: -10px;
+  left: 60%;
+  animation-delay: 6s;
 }
 
 .particle-8 {
-    width: 5px;
-    height: 5px;
-    top: -10px;
-    left: 40%;
-    animation-delay: 7s;
+  width: 5px;
+  height: 5px;
+  top: -10px;
+  left: 40%;
+  animation-delay: 7s;
 }
 
 .particle-9 {
-    width: 2px;
-    height: 2px;
-    top: -10px;
-    left: 75%;
-    animation-delay: 1.5s;
+  width: 2px;
+  height: 2px;
+  top: -10px;
+  left: 75%;
+  animation-delay: 1.5s;
 }
 
 .particle-10 {
-    width: 4px;
-    height: 4px;
-    top: -10px;
-    left: 90%;
-    animation-delay: 3.5s;
+  width: 4px;
+  height: 4px;
+  top: -10px;
+  left: 90%;
+  animation-delay: 3.5s;
 }
 
 /* Nébuleuses subtiles */
 .nebula {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(15px);
-    animation: nebula-drift 15s infinite linear;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(15px);
+  animation: nebula-drift 15s infinite linear;
 }
 
 .nebula-1 {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 70%);
-    top: 10%;
-    left: -100px;
-    animation-delay: 0s;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(138, 43, 226, 0.2) 0%,
+    transparent 70%
+  );
+  top: 10%;
+  left: -100px;
+  animation-delay: 0s;
 }
 
 .nebula-2 {
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(75, 0, 130, 0.2) 0%, transparent 70%);
-    top: 60%;
-    left: -150px;
-    animation-delay: 7s;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle,
+    rgba(75, 0, 130, 0.2) 0%,
+    transparent 70%
+  );
+  top: 60%;
+  left: -150px;
+  animation-delay: 7s;
 }
 
 /* Contenu principal */
 .main-content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    cursor: none;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  cursor: none;
 }
 
 .name {
-    font-size: 4.5rem;
-    font-weight: 300;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out 0.5s forwards;
+  font-size: 4.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out 0.5s forwards;
 }
 
 .title {
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 6px;
-    margin-bottom: 50px;
-    color: rgba(255, 255, 255, 0.8);
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out 1s forwards;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out 1s forwards;
 }
 
 .cta-button {
-    background: linear-gradient(45deg, #6c5ce7, #a29bfe);
-    border: none;
-    color: white;
-    padding: 15px 35px;
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out 1.5s forwards;
+  background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out 1.5s forwards;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(108, 92, 231, 0.4);
-    background: linear-gradient(45deg, #5f4dee, #9288fc);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(108, 92, 231, 0.4);
+  background: linear-gradient(45deg, #5f4dee, #9288fc);
 }
 
 /* Animations */
 @keyframes twinkle {
-    0%, 100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
 
 @keyframes float {
-    0% {
-        transform: translateY(100vh) translateX(0);
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.8;
-    }
-    90% {
-        opacity: 0.8;
-    }
-    100% {
-        transform: translateY(-100px) translateX(50px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) translateX(50px);
+    opacity: 0;
+  }
 }
 
 @keyframes nebula-drift {
-    0% {
-        transform: translateX(-200px) translateY(0);
-    }
-    100% {
-        transform: translateX(calc(100vw + 200px)) translateY(-50px);
-    }
+  0% {
+    transform: translateX(-200px) translateY(0);
+  }
+  100% {
+    transform: translateX(calc(100vw + 200px)) translateY(-50px);
+  }
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .name {
-        font-size: 3rem;
-        letter-spacing: 2px;
-    }
-    
-    .title {
-        font-size: 1rem;
-        letter-spacing: 4px;
-    }
-    
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 0.9rem;
-    }
+  .name {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
 }
 /* Hero Section */
 .hero {
@@ -444,21 +461,6 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background: radial-gradient(
-      circle at 20% 80%,
-      rgba(120, 119, 198, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
-      rgba(255, 255, 255, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 40%,
-      rgba(120, 119, 198, 0.2) 0%,
-      transparent 50%
-    ); */
 }
 
 .hero-content {
@@ -572,7 +574,7 @@ header {
 
 /* Expérience section */
 
- #experiences{
+#experiences {
   height: 60vh;
   padding: 1.5rem 0;
   border-top: 1px solid #333356;
@@ -583,8 +585,7 @@ header {
   justify-content: center;
 }
 
-
-.experienceList{
+.experienceList {
   margin-top: 1.5rem;
   border: red solid 1px;
   width: 80%;
@@ -596,52 +597,51 @@ header {
 }
 
 .experience-container {
-      width: 80%;
-      max-width: 1000px;
-      padding: 20px;
+  width: 80%;
+  max-width: 1000px;
+  padding: 20px;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
 
-    .experience-item {
-      margin-bottom: 15px;
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-    }
+.experience-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
 
-    .experience-title {
-      font-weight: bold;
-      font-size: 1.5rem;
-      cursor: pointer;
-      background: none;
-      border: none;
-      color: white;
-      text-align: left;
-      width: 100%;
-      padding: 10px 0;
-    }
+.experience-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  width: 100%;
+  padding: 10px 0;
+}
 
-    .experience-content {
-      font-size: 1.4rem;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-    }
+.experience-content {
+  font-size: 1.4rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
 
-    .experience-content.open {
-      max-height: 10rem; /* Ajustable selon contenu */
-    }
+.experience-content.open {
+  max-height: 10rem; /* Ajustable selon contenu */
+}
 
-    
 /* Project & Skills Section */
 .portfolio-skills {
   padding: 8rem 0;
@@ -760,20 +760,20 @@ a{
 /* Carousel */
 
 .carousel {
-    /* ... */
-    > * {
-      flex: 0 0 100%;
-    }
+  /* ... */
+  > * {
+    flex: 0 0 100%;
   }
+}
 
-  /* Group the cards for better structure. */
-  .group {
-    display: flex;
-    gap: 20px;
-    /* Add padding to the right to create a gap between the last and first card. */
-    padding-right: 20px;
-  }
-  
+/* Group the cards for better structure. */
+.group {
+  display: flex;
+  gap: 20px;
+  /* Add padding to the right to create a gap between the last and first card. */
+  padding-right: 20px;
+}
+
 .carousel-container {
   width: 100%;
   position: relative;
@@ -784,103 +784,102 @@ a{
 }
 
 .carousel-title {
-    text-align: center;
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: 300;
-    letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .carousel-wrapper {
-    overflow: hidden;
-    position: relative;
-    border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
 }
 
 .carousel-track {
-    display: flex;
-    animation: carousel-scroll 30s linear infinite;
-    -webkit-animation: carousel-scroll 30s linear infinite;
+  display: flex;
+  animation: carousel-scroll 30s linear infinite;
+  -webkit-animation: carousel-scroll 30s linear infinite;
 }
 
 .carousel-item {
-    min-width: 120px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
-    flex-shrink: 0;
+  min-width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  flex-shrink: 0;
 }
 
 .carousel-item:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-    background: rgba(255, 255, 255, 1);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
 
-  .carousel-name{
+  .carousel-name {
     color: #141629;
   }
 }
 
-img{
+img {
   width: 50px;
 }
 
 .carousel-logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 8px;
-    transition: transform 0.3s ease;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
 }
 
 .carousel-item:hover .carousel-logo {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .carousel-name {
-    font-size: 12px;
-    font-weight: 600;
-    color: #ffffff;
-    text-align: center;
-    letter-spacing: 0.5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
 
 @keyframes carousel-scroll {
-   0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-
 .carousel-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @media (max-width: 768px) {
-    .carousel-title {
-        font-size: 2rem;
-    }
-    
-    .carousel-item {
-        min-width: 100px;
-        height: 100px;
-    }
-    
-    .carousel-logo {
-        width: 40px;
-        height: 40px;
-    }
+  .carousel-title {
+    font-size: 2rem;
+  }
+
+  .carousel-item {
+    min-width: 100px;
+    height: 100px;
+  }
+
+  .carousel-logo {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Contact Section */
@@ -935,7 +934,6 @@ img{
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
